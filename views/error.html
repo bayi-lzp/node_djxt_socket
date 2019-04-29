@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>出错了</title>
+  <script>
+    !function(_window, _document) {
+      var _documentEle = _document.documentElement,
+        devicePixelRatio = _window.devicePixelRatio || 1;
+  
+      function count() {
+        // var _cwidth = _documentEle.clientWidth / 10;
+        var _cwidth = _documentEle.clientWidth / 3.75;
+        _documentEle.style.fontSize = _cwidth + "px";
+      };
+  
+      if (
+        function e(){ 
+          _document.body ? _document.body.style.fontSize = "16px" : _document.addEventListener("DOMContentLoaded", _window);
+        }(), 
+        count(), 
+        _window.addEventListener("resize", count), 
+        _window.addEventListener("pageshow", function(e) { _window.persisted && count() }), 
+        devicePixelRatio >= 2
+        ){
+        var createElementBody = _document.createElement("body"),
+          creareDiv = _document.createElement("div");
+        creareDiv.style.border = ".5px solid transparent", createElementBody.appendChild(creareDiv), _documentEle.appendChild(createElementBody), 1 === creareDiv.offsetHeight , _documentEle.removeChild(createElementBody);
+      };
+    }(window, document);
+  </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.3/weui.min.css">
+  <style>
+    body { font-size:0.14rem; }
+    .ta-l { text-align:left; }
+    .head { text-align: center;padding:0.10rem 0.15rem;font-size:0.16rem;border-bottom:0.01rem solid #ddd; }
+    .wrap { padding:0.15rem; }
+    .icon_back { width:0.24rem;height: auto; }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+</head>
+<body>
+  
+  <div id="app">
+
+    <div class="weui-msg">
+        <div class="weui-msg__icon-area"><i class="weui-icon-warn weui-icon_msg"></i></div>
+        <div class="weui-msg__text-area">
+            <h2 class="weui-msg__title">出错了</h2>
+            <!-- <p class="weui-msg__desc">错误内容</p> -->
+        </div>
+        <div class="weui-msg__opr-area">
+            <p class="weui-btn-area">
+                <a href="javascript:history.back();" class="weui-btn weui-btn_primary">返回</a>
+                <!-- <a href="javascript:history.back();" class="weui-btn weui-btn_default">辅助操作</a> -->
+            </p>
+        </div>
+        <!-- <div class="weui-msg__extra-area">
+            <div class="weui-footer">
+                <p class="weui-footer__links">
+                    <a href="javascript:void(0);" class="weui-footer__link">底部链接文本</a>
+                </p>
+                <p class="weui-footer__text">Copyright &copy; 2008-2016 weui.io</p>
+            </div>
+        </div> -->
+    </div>
+
+  </div>
+
+  <script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            toastSucess: {
+              status: false,
+              content: '已完成'
+            },
+        },
+    })
+  </script>
+</body>
+</html>

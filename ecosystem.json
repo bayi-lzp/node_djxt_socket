@@ -1,0 +1,27 @@
+{
+  "name"        : "djxt",
+  "script"      : "./bin/www.js",
+  "cwd"         : "./",
+  "watch": [
+    "bin",
+    "routers"
+  ],
+  "ignore_watch" : [
+    "node_modules", 
+    "logs",
+    "public"
+  ],
+  "watch_options": {
+    "followSymlinks": false
+  },
+  "env": {
+      "NODE_ENV": "production"
+  },
+  "env_test": {
+    "NODE_ENV": "testing"
+  },
+  "error" : "./logs/app-err.log",
+  "output"   : "./logs/app-out.log",
+  "merge_logs": true,                         
+  "log_date_format": "YYYY-MM-DD HH:mm:ss"
+}

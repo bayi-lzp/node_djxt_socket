@@ -1,0 +1,315 @@
+2019-04-28 10:07:32: 
+2019-04-28 10:07:32:   ReferenceError: sock is not defined
+2019-04-28 10:07:32:       at router.post (F:\workspace\djyc\router\routes\index.js:68:3)
+2019-04-28 10:07:32:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+2019-04-28 10:07:32:       at next (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+2019-04-28 10:07:32:       at F:\workspace\djyc\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+2019-04-28 10:07:32:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+2019-04-28 10:07:32:       at F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+2019-04-28 10:07:32:       at dispatch (F:\workspace\djyc\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+2019-04-28 10:07:32:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:07:32:       at logger (F:\workspace\djyc\node_modules\_koa-logger@3.2.0@koa-logger\index.js:67:13)
+2019-04-28 10:07:32:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:07:32:       at filter (F:\workspace\djyc\node_modules\_koa-json@2.0.2@koa-json\index.js:25:12)
+2019-04-28 10:07:32:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:07:32:       at F:\workspace\djyc\node_modules\_koa-body@4.1.0@koa-body\index.js:141:14
+2019-04-28 10:07:32:       at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-04-28 10:07:32: 
+2019-04-28 10:19:28: 
+2019-04-28 10:19:28:   ReferenceError: sock is not defined
+2019-04-28 10:19:28:       at router.post (F:\workspace\djyc\router\routes\index.js:70:3)
+2019-04-28 10:19:28:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+2019-04-28 10:19:28:       at next (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+2019-04-28 10:19:28:       at F:\workspace\djyc\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+2019-04-28 10:19:28:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+2019-04-28 10:19:28:       at F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+2019-04-28 10:19:28:       at dispatch (F:\workspace\djyc\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+2019-04-28 10:19:28:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:19:28:       at logger (F:\workspace\djyc\node_modules\_koa-logger@3.2.0@koa-logger\index.js:67:13)
+2019-04-28 10:19:28:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:19:28:       at filter (F:\workspace\djyc\node_modules\_koa-json@2.0.2@koa-json\index.js:25:12)
+2019-04-28 10:19:28:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:19:28:       at F:\workspace\djyc\node_modules\_koa-body@4.1.0@koa-body\index.js:141:14
+2019-04-28 10:19:28:       at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-04-28 10:19:28: 
+2019-04-28 10:35:39: 
+2019-04-28 10:35:39:   ReferenceError: sock is not defined
+2019-04-28 10:35:39:       at router.post (F:\workspace\djyc\router\routes\index.js:70:3)
+2019-04-28 10:35:39:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+2019-04-28 10:35:39:       at next (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+2019-04-28 10:35:39:       at F:\workspace\djyc\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+2019-04-28 10:35:39:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+2019-04-28 10:35:39:       at F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+2019-04-28 10:35:39:       at dispatch (F:\workspace\djyc\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+2019-04-28 10:35:39:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:35:39:       at logger (F:\workspace\djyc\node_modules\_koa-logger@3.2.0@koa-logger\index.js:67:13)
+2019-04-28 10:35:39:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:35:39:       at filter (F:\workspace\djyc\node_modules\_koa-json@2.0.2@koa-json\index.js:25:12)
+2019-04-28 10:35:39:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:35:39:       at F:\workspace\djyc\node_modules\_koa-body@4.1.0@koa-body\index.js:141:14
+2019-04-28 10:35:39:       at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-04-28 10:35:39: 
+2019-04-28 10:44:26: 
+2019-04-28 10:44:26:   ReferenceError: sock is not defined
+2019-04-28 10:44:26:       at router.post (F:\workspace\djyc\router\routes\index.js:70:3)
+2019-04-28 10:44:26:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+2019-04-28 10:44:26:       at next (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+2019-04-28 10:44:26:       at F:\workspace\djyc\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+2019-04-28 10:44:26:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+2019-04-28 10:44:26:       at F:\workspace\djyc\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+2019-04-28 10:44:26:       at dispatch (F:\workspace\djyc\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+2019-04-28 10:44:26:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:44:26:       at logger (F:\workspace\djyc\node_modules\_koa-logger@3.2.0@koa-logger\index.js:67:13)
+2019-04-28 10:44:26:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:44:26:       at filter (F:\workspace\djyc\node_modules\_koa-json@2.0.2@koa-json\index.js:25:12)
+2019-04-28 10:44:26:       at dispatch (F:\workspace\djyc\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+2019-04-28 10:44:26:       at F:\workspace\djyc\node_modules\_koa-body@4.1.0@koa-body\index.js:141:14
+2019-04-28 10:44:26:       at process._tickCallback (internal/process/next_tick.js:68:7)
+2019-04-28 10:44:26: 
+2019-04-28 10:57:56: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:57:56:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:57:56:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:57:56:     at doListen (net.js:1451:7)
+2019-04-28 10:57:56:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:57:56:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:57:56:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:57:56:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:57:56:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:57:56:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:57:56:   syscall: 'listen',
+2019-04-28 10:57:56:   address: '192.168.1.125',
+2019-04-28 10:57:56:   port: 3004 }
+2019-04-28 10:57:57: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:57:57:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:57:57:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:57:57:     at doListen (net.js:1451:7)
+2019-04-28 10:57:57:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:57:57:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:57:57:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:57:57:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:57:57:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:57:57:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:57:57:   syscall: 'listen',
+2019-04-28 10:57:57:   address: '192.168.1.125',
+2019-04-28 10:57:57:   port: 3004 }
+2019-04-28 10:57:58: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:57:58:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:57:58:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:57:58:     at doListen (net.js:1451:7)
+2019-04-28 10:57:58:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:57:58:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:57:58:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:57:58:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:57:58:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:57:58:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:57:58:   syscall: 'listen',
+2019-04-28 10:57:58:   address: '192.168.1.125',
+2019-04-28 10:57:58:   port: 3004 }
+2019-04-28 10:57:59: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:57:59:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:57:59:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:57:59:     at doListen (net.js:1451:7)
+2019-04-28 10:57:59:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:57:59:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:57:59:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:57:59:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:57:59:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:57:59:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:57:59:   syscall: 'listen',
+2019-04-28 10:57:59:   address: '192.168.1.125',
+2019-04-28 10:57:59:   port: 3004 }
+2019-04-28 10:58:00: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:00:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:00:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:00:     at doListen (net.js:1451:7)
+2019-04-28 10:58:00:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:00:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:00:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:00:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:00:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:00:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:00:   syscall: 'listen',
+2019-04-28 10:58:00:   address: '192.168.1.125',
+2019-04-28 10:58:00:   port: 3004 }
+2019-04-28 10:58:00: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:00:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:00:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:00:     at doListen (net.js:1451:7)
+2019-04-28 10:58:00:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:00:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:00:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:00:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:00:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:00:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:00:   syscall: 'listen',
+2019-04-28 10:58:00:   address: '192.168.1.125',
+2019-04-28 10:58:00:   port: 3004 }
+2019-04-28 10:58:01: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:01:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:01:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:01:     at doListen (net.js:1451:7)
+2019-04-28 10:58:01:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:01:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:01:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:01:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:01:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:01:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:01:   syscall: 'listen',
+2019-04-28 10:58:01:   address: '192.168.1.125',
+2019-04-28 10:58:01:   port: 3004 }
+2019-04-28 10:58:02: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:02:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:02:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:02:     at doListen (net.js:1451:7)
+2019-04-28 10:58:02:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:02:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:02:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:02:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:02:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:02:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:02:   syscall: 'listen',
+2019-04-28 10:58:02:   address: '192.168.1.125',
+2019-04-28 10:58:02:   port: 3004 }
+2019-04-28 10:58:03: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:03:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:03:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:03:     at doListen (net.js:1451:7)
+2019-04-28 10:58:03:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:03:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:03:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:03:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:03:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:03:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:03:   syscall: 'listen',
+2019-04-28 10:58:03:   address: '192.168.1.125',
+2019-04-28 10:58:03:   port: 3004 }
+2019-04-28 10:58:04: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:04:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:04:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:04:     at doListen (net.js:1451:7)
+2019-04-28 10:58:04:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:04:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:04:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:04:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:04:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:04:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:04:   syscall: 'listen',
+2019-04-28 10:58:04:   address: '192.168.1.125',
+2019-04-28 10:58:04:   port: 3004 }
+2019-04-28 10:58:05: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:05:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:05:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:05:     at doListen (net.js:1451:7)
+2019-04-28 10:58:05:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:05:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:05:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:05:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:05:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:05:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:05:   syscall: 'listen',
+2019-04-28 10:58:05:   address: '192.168.1.125',
+2019-04-28 10:58:05:   port: 3004 }
+2019-04-28 10:58:06: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:06:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:06:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:06:     at doListen (net.js:1451:7)
+2019-04-28 10:58:06:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:06:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:06:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:06:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:06:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:06:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:06:   syscall: 'listen',
+2019-04-28 10:58:06:   address: '192.168.1.125',
+2019-04-28 10:58:06:   port: 3004 }
+2019-04-28 10:58:07: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:07:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:07:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:07:     at doListen (net.js:1451:7)
+2019-04-28 10:58:07:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:07:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:07:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:07:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:07:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:07:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:07:   syscall: 'listen',
+2019-04-28 10:58:07:   address: '192.168.1.125',
+2019-04-28 10:58:07:   port: 3004 }
+2019-04-28 10:58:07: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:07:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:07:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:07:     at doListen (net.js:1451:7)
+2019-04-28 10:58:07:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:07:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:07:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:07:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:07:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:07:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:07:   syscall: 'listen',
+2019-04-28 10:58:07:   address: '192.168.1.125',
+2019-04-28 10:58:07:   port: 3004 }
+2019-04-28 10:58:08: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:08:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:08:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:08:     at doListen (net.js:1451:7)
+2019-04-28 10:58:08:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:08:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:08:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:08:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:08:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:08:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:08:   syscall: 'listen',
+2019-04-28 10:58:08:   address: '192.168.1.125',
+2019-04-28 10:58:08:   port: 3004 }
+2019-04-28 10:58:09: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:09:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:09:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:09:     at doListen (net.js:1451:7)
+2019-04-28 10:58:09:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:09:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:09:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:09:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:09:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:09:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:09:   syscall: 'listen',
+2019-04-28 10:58:09:   address: '192.168.1.125',
+2019-04-28 10:58:09:   port: 3004 }
+2019-04-28 10:58:10: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:10:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:10:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:10:     at doListen (net.js:1451:7)
+2019-04-28 10:58:10:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:10:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:10:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:10:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:10:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:10:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:10:   syscall: 'listen',
+2019-04-28 10:58:10:   address: '192.168.1.125',
+2019-04-28 10:58:10:   port: 3004 }
+2019-04-28 10:58:11: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:11:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:11:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:11:     at doListen (net.js:1451:7)
+2019-04-28 10:58:11:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:11:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:11:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:11:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:11:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:11:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:11:   syscall: 'listen',
+2019-04-28 10:58:11:   address: '192.168.1.125',
+2019-04-28 10:58:11:   port: 3004 }
+2019-04-28 10:58:12: { Error: listen EADDRNOTAVAIL: address not available 192.168.1.125:3004
+2019-04-28 10:58:12:     at Server.setupListenHandle [as _listen2] (net.js:1253:19)
+2019-04-28 10:58:12:     at listenInCluster (net.js:1318:12)
+2019-04-28 10:58:12:     at doListen (net.js:1451:7)
+2019-04-28 10:58:12:     at process._tickCallback (internal/process/next_tick.js:63:19)
+2019-04-28 10:58:12:     at Function.Module.runMain (internal/modules/cjs/loader.js:757:11)
+2019-04-28 10:58:12:     at startup (internal/bootstrap/node.js:283:19)
+2019-04-28 10:58:12:     at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-04-28 10:58:12:   code: 'EADDRNOTAVAIL',
+2019-04-28 10:58:12:   errno: 'EADDRNOTAVAIL',
+2019-04-28 10:58:12:   syscall: 'listen',
+2019-04-28 10:58:12:   address: '192.168.1.125',
+2019-04-28 10:58:12:   port: 3004 }

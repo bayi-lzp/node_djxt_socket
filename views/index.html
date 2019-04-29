@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>电机操作系统</title>
+  <script>
+    !function(_window, _document) {
+      var _documentEle = _document.documentElement,
+        devicePixelRatio = _window.devicePixelRatio || 1;
+  
+      function count() {
+        // var _cwidth = _documentEle.clientWidth / 10;
+        var _cwidth = _documentEle.clientWidth / 3.75;
+        _documentEle.style.fontSize = _cwidth + "px";
+      };
+  
+      if (
+        function e(){ 
+          _document.body ? _document.body.style.fontSize = "16px" : _document.addEventListener("DOMContentLoaded", _window);
+        }(), 
+        count(), 
+        _window.addEventListener("resize", count), 
+        _window.addEventListener("pageshow", function(e) { _window.persisted && count() }), 
+        devicePixelRatio >= 2
+        ){
+        var createElementBody = _document.createElement("body"),
+          creareDiv = _document.createElement("div");
+        creareDiv.style.border = ".5px solid transparent", createElementBody.appendChild(creareDiv), _documentEle.appendChild(createElementBody), 1 === creareDiv.offsetHeight , _documentEle.removeChild(createElementBody);
+      };
+    }(window, document);
+  </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@4.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.3/weui.min.css">
+  <style>
+    body { font-size:0.14rem; }
+    .ta-l { text-align:left; }
+    .head { text-align: center;padding:0.10rem 0.15rem;font-size:0.16rem;border-bottom:0.01rem solid #ddd; }
+    .wrap { padding:0.15rem; }
+    .icon_back { width:0.24rem;height: auto; }
+  </style>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
+</head>
+<body>
+  
+  <div id="app">
+    <header class="weui-flex head">
+      <div class="weui-flex__item ta-l"><div class="placeholder"><!-- <img class="icon_back" src="/images/back.svg"/> --></div></div>
+      <div class="weui-flex__item"><div class="placeholder">电机操作系统</div></div>
+      <div class="weui-flex__item"><div class="placeholder"></div></div>
+    </header>
+
+    <div class="wrap">
+      <button @click="goA('A1')" class="weui-btn" v-bind:class="{ 'weui-btn_loading': btnStatus.cur == 'A1'&&btnStatus.status==0, 'weui-btn_primary': btnStatus.cur == 'A1'&&btnStatus.status==1, 'weui-btn_plain-primary': btnStatus.cur != 'A1' }">A 前进<i v-show="btnStatus.cur == 'A1'&&btnStatus.status==0" class="weui-loading"></i></button>
+
+      <button @click="backA('A0')" class="weui-btn" v-bind:class="{ 'weui-btn_loading': btnStatus.cur == 'A0'&&btnStatus.status==0, 'weui-btn_primary': btnStatus.cur == 'A0'&&btnStatus.status==1, 'weui-btn_plain-default': btnStatus.cur != 'A0' }">A 后退<i v-show="btnStatus.cur == 'A0'&&btnStatus.status==0" class="weui-loading"></i></button>
+
+      <button @click="goB('B1')" class="weui-btn" v-bind:class="{ 'weui-btn_loading': btnStatus.cur == 'B1'&&btnStatus.status==0, 'weui-btn_primary': btnStatus.cur == 'B1'&&btnStatus.status==1, 'weui-btn_plain-primary': btnStatus.cur != 'B1' }">B 前进<i v-show="btnStatus.cur == 'B1'&&btnStatus.status==0" class="weui-loading"></i></button>
+      
+      <button @click="backB('B0')" class="weui-btn" v-bind:class="{ 'weui-btn_loading': btnStatus.cur == 'B0'&&btnStatus.status==0, 'weui-btn_primary': btnStatus.cur == 'B0'&&btnStatus.status==1, 'weui-btn_plain-default': btnStatus.cur != 'B0' }">B 后退<i v-show="btnStatus.cur == 'B0'&&btnStatus.status==0" class="weui-loading"></i></button>
+    </div>
+
+    <!-- 加载中 -->
+    <div class="weui-loadmore" v-show="showLoad">
+        <i class="weui-loading"></i>
+        <span class="weui-loadmore__tips">正在加载</span>
+    </div>
+    <!-- 加载中 end -->
+
+    <!-- 提示 -->
+    <div id="toast" v-show="toastSucess.status" style="display: none;">
+        <div class="weui-mask_transparent"></div>
+        <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content">{{ toastSucess.content }}</p>
+        </div>
+    </div>
+    <!-- 提示 end -->
+
+    <!-- alert -->
+    <div v-show="alertDialog.status" style="display: none;">
+        <div class="weui-mask"></div>
+        <div class="weui-dialog">
+            <div class="weui-dialog__hd"><strong class="weui-dialog__title">{{ alertDialog.title }}</strong></div>
+            <div class="weui-dialog__bd">{{ alertDialog.content }}</div>
+            <div class="weui-dialog__ft">
+                <a href="javascript:;" @click="confirmBtn" class="weui-dialog__btn weui-dialog__btn_primary">确定</a>
+            </div>
+        </div>
+    </div>
+    <!-- alert end -->
+  </div>
+
+  <script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            toastSucess: {
+              status: false,
+              content: '已完成'
+            },
+            alertDialog: {
+              status: false,
+              content: '连接失败',
+              title: '提示'
+            },
+            showLoad: false,
+            btnStatus: {
+              cur: 0,
+              status: 0,//1-操作成功， 2-操作失败
+              msg: '操作失败了',
+            }
+        },
+        created: function () {
+          
+        },
+        mounted() {
+          //提示连接上了
+          this.toastSucess.status = true;
+          this.toastSucess.content = '欢迎使用';
+          
+          setTimeout(()=>{
+            this.toastSucess.status = false;
+            this.toastSucess.content = '已完成';
+          }, 1500);
+        },
+        methods: {
+          // A 前进
+          goA (id){
+            axios.post('/djxt/move', { id })
+            .then( (response)=> {
+              console.log(response);
+              if( response.data.success ){
+                this.alertDialog.content = '操作成功';
+                this.alertDialog.status = true;
+              }else{
+                this.alertDialog.content = '操作失败了';
+                this.alertDialog.status = true;
+              }
+            })
+            .catch( (error)=> {
+              console.log(error);
+                this.alertDialog.content = '操作失败了';
+                this.alertDialog.status = true;
+            });
+          },
+          // A 后退
+          backA (id){
+            axios.post('/djxt/move', { id })
+            .then( (response)=> {
+              console.log(response);
+              if( response.data.success ){
+                this.alertDialog.content = '操作成功';
+                this.alertDialog.status = true;
+              }else{
+                this.alertDialog.content = '操作失败了';
+                this.alertDialog.status = true;
+              }
+            })
+            .catch( (error)=> {
+              console.log(error);
+                this.alertDialog.content = '操作失败了';
+                this.alertDialog.status = true;
+            });
+            
+          },
+          // B 后退
+          goB (id){
+            axios.post('/djxt/move', { id })
+            .then( (response)=> {
+              console.log(response);
+              if( response.data.success ){
+                this.alertDialog.content = '操作成功';
+                this.alertDialog.status = true;
+              }else{
+                this.alertDialog.content = '操作失败了';
+                this.alertDialog.status = true;
+              }
+            })
+            .catch( (error) => {
+              console.log(error);
+                this.alertDialog.content = '操作失败了';
+                this.alertDialog.status = true;
+            });
+            
+          },
+          // B 后退
+          backB (id){
+            axios.post('/djxt/move', { id })
+            .then( (response) => {
+              console.log(response);
+              if( response.data.success ){
+                this.alertDialog.content = '操作成功';
+                this.alertDialog.status = true;
+              }else{
+                this.alertDialog.content = '操作失败了';
+                this.alertDialog.status = true;
+              }
+            })
+            .catch( (error) => {
+              console.log(error);
+                this.alertDialog.content = '操作失败了';
+                this.alertDialog.status = true;
+            });
+            
+          },
+          //跳转连接出错页面
+          goError (){
+            window.location.replace('/error');
+          },
+          confirmBtn (){
+            this.alertDialog.status = false;
+          },
+        },
+    })
+  </script>
+</body>
+</html>

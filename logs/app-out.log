@@ -1,0 +1,551 @@
+2019-04-26 01:22:45: 下面是socket的代码
+2019-04-26 01:23:01:   <-- GET /
+2019-04-26 01:23:01: GET / - 10ms
+2019-04-26 01:23:01:   --> GET / 200 16ms 9.01kb
+2019-04-26 01:24:20:   <-- GET /
+2019-04-26 01:24:20: GET / - 3ms
+2019-04-26 01:24:20:   --> GET / 200 5ms 9.01kb
+2019-04-28 09:51:38: sock:  Socket {
+2019-04-28 09:51:38:   connecting: false,
+2019-04-28 09:51:38:   _hadError: false,
+2019-04-28 09:51:38:   _handle:
+2019-04-28 09:51:38:    TCP {
+2019-04-28 09:51:38:      reading: true,
+2019-04-28 09:51:38:      onread: [Function: onStreamRead],
+2019-04-28 09:51:38:      onconnection: null,
+2019-04-28 09:51:38:      [Symbol(owner)]: [Circular] },
+2019-04-28 09:51:38:   _parent: null,
+2019-04-28 09:51:38:   _host: null,
+2019-04-28 09:51:38:   _readableState:
+2019-04-28 09:51:38:    ReadableState {
+2019-04-28 09:51:38:      objectMode: false,
+2019-04-28 09:51:38:      highWaterMark: 16384,
+2019-04-28 09:51:38:      buffer: BufferList { head: null, tail: null, length: 0 },
+2019-04-28 09:51:38:      length: 0,
+2019-04-28 09:51:38:      pipes: null,
+2019-04-28 09:51:38:      pipesCount: 0,
+2019-04-28 09:51:38:      flowing: null,
+2019-04-28 09:51:38:      ended: false,
+2019-04-28 09:51:38:      endEmitted: false,
+2019-04-28 09:51:38:      reading: true,
+2019-04-28 09:51:38:      sync: false,
+2019-04-28 09:51:38:      needReadable: true,
+2019-04-28 09:51:38:      emittedReadable: false,
+2019-04-28 09:51:38:      readableListening: false,
+2019-04-28 09:51:38:      resumeScheduled: false,
+2019-04-28 09:51:38:      paused: true,
+2019-04-28 09:51:38:      emitClose: false,
+2019-04-28 09:51:38:      destroyed: false,
+2019-04-28 09:51:38:      defaultEncoding: 'utf8',
+2019-04-28 09:51:38:      awaitDrain: 0,
+2019-04-28 09:51:38:      readingMore: false,
+2019-04-28 09:51:38:      decoder: null,
+2019-04-28 09:51:38:      encoding: null },
+2019-04-28 09:51:38:   readable: true,
+2019-04-28 09:51:38:   _events:
+2019-04-28 09:51:38:    [Object: null prototype] { end: [Function: onReadableStreamEnd] },
+2019-04-28 09:51:38:   _eventsCount: 1,
+2019-04-28 09:51:38:   _maxListeners: undefined,
+2019-04-28 09:51:38:   _writableState:
+2019-04-28 09:51:38:    WritableState {
+2019-04-28 09:51:38:      objectMode: false,
+2019-04-28 09:51:38:      highWaterMark: 16384,
+2019-04-28 09:51:38:      finalCalled: false,
+2019-04-28 09:51:38:      needDrain: false,
+2019-04-28 09:51:38:      ending: false,
+2019-04-28 09:51:38:      ended: false,
+2019-04-28 09:51:38:      finished: false,
+2019-04-28 09:51:38:      destroyed: false,
+2019-04-28 09:51:38:      decodeStrings: false,
+2019-04-28 09:51:38:      defaultEncoding: 'utf8',
+2019-04-28 09:51:38:      length: 0,
+2019-04-28 09:51:38:      writing: false,
+2019-04-28 09:51:38:      corked: 0,
+2019-04-28 09:51:38:      sync: true,
+2019-04-28 09:51:38:      bufferProcessing: false,
+2019-04-28 09:51:38:      onwrite: [Function: bound onwrite],
+2019-04-28 09:51:38:      writecb: null,
+2019-04-28 09:51:38:      writelen: 0,
+2019-04-28 09:51:38:      bufferedRequest: null,
+2019-04-28 09:51:38:      lastBufferedRequest: null,
+2019-04-28 09:51:38:      pendingcb: 0,
+2019-04-28 09:51:38:      prefinished: false,
+2019-04-28 09:51:38:      errorEmitted: false,
+2019-04-28 09:51:38:      emitClose: false,
+2019-04-28 09:51:38:      bufferedRequestCount: 0,
+2019-04-28 09:51:38:      corkedRequestsFree:
+2019-04-28 09:51:38:       { next: null,
+2019-04-28 09:51:38:         entry: null,
+2019-04-28 09:51:38:         finish: [Function: bound onCorkedFinish] } },
+2019-04-28 09:51:38:   writable: true,
+2019-04-28 09:51:38:   allowHalfOpen: false,
+2019-04-28 09:51:38:   _sockname: null,
+2019-04-28 09:51:38:   _pendingData: null,
+2019-04-28 09:51:38:   _pendingEncoding: '',
+2019-04-28 09:51:38:   server:
+2019-04-28 09:51:38:    Server {
+2019-04-28 09:51:38:      _events: [Object: null prototype] { connection: [Function] },
+2019-04-28 09:51:38:      _eventsCount: 1,
+2019-04-28 09:51:38:      _maxListeners: undefined,
+2019-04-28 09:51:38:      _connections: 1,
+2019-04-28 09:51:38:      _handle:
+2019-04-28 09:51:38:       TCP {
+2019-04-28 09:51:38:         reading: false,
+2019-04-28 09:51:38:         onread: null,
+2019-04-28 09:51:38:         onconnection: [Function: onconnection],
+2019-04-28 09:51:38:         [Symbol(owner)]: [Circular] },
+2019-04-28 09:51:38:      _usingWorkers: false,
+2019-04-28 09:51:38:      _workers: [],
+2019-04-28 09:51:38:      _unref: false,
+2019-04-28 09:51:38:      allowHalfOpen: false,
+2019-04-28 09:51:38:      pauseOnConnect: false,
+2019-04-28 09:51:38:      _connectionKey: '4:127.0.0.1:3004',
+2019-04-28 09:51:38:      [Symbol(asyncId)]: 34 },
+2019-04-28 09:51:38:   _server:
+2019-04-28 09:51:38:    Server {
+2019-04-28 09:51:38:      _events: [Object: null prototype] { connection: [Function] },
+2019-04-28 09:51:38:      _eventsCount: 1,
+2019-04-28 09:51:38:      _maxListeners: undefined,
+2019-04-28 09:51:38:      _connections: 1,
+2019-04-28 09:51:38:      _handle:
+2019-04-28 09:51:38:       TCP {
+2019-04-28 09:51:38:         reading: false,
+2019-04-28 09:51:38:         onread: null,
+2019-04-28 09:51:38:         onconnection: [Function: onconnection],
+2019-04-28 09:51:38:         [Symbol(owner)]: [Circular] },
+2019-04-28 09:51:38:      _usingWorkers: false,
+2019-04-28 09:51:38:      _workers: [],
+2019-04-28 09:51:38:      _unref: false,
+2019-04-28 09:51:38:      allowHalfOpen: false,
+2019-04-28 09:51:38:      pauseOnConnect: false,
+2019-04-28 09:51:38:      _connectionKey: '4:127.0.0.1:3004',
+2019-04-28 09:51:38:      [Symbol(asyncId)]: 34 },
+2019-04-28 09:51:38:   [Symbol(asyncId)]: 65,
+2019-04-28 09:51:38:   [Symbol(lastWriteQueueSize)]: 0,
+2019-04-28 09:51:38:   [Symbol(timeout)]: null,
+2019-04-28 09:51:38:   [Symbol(kBytesRead)]: 0,
+2019-04-28 09:51:38:   [Symbol(kBytesWritten)]: 0 }
+2019-04-28 09:51:38: CONNECTED: 127.0.0.1:53786
+2019-04-28 09:51:49:   <-- GET /
+2019-04-28 09:51:49: GET / - 2ms
+2019-04-28 09:51:49:   --> GET / 404 6ms -
+2019-04-28 09:51:49:   <-- GET /favicon.ico
+2019-04-28 09:51:49: GET /favicon.ico - 0ms
+2019-04-28 09:51:49:   --> GET /favicon.ico 404 1ms -
+2019-04-28 09:51:51:   <-- GET /
+2019-04-28 09:51:51: GET / - 1ms
+2019-04-28 09:51:51:   --> GET / 404 2ms -
+2019-04-28 09:52:15:   <-- GET /
+2019-04-28 09:52:15: GET / - 0ms
+2019-04-28 09:52:15:   --> GET / 404 1ms -
+2019-04-28 09:52:15:   <-- GET /robots.txt
+2019-04-28 09:52:15: GET /robots.txt - 1ms
+2019-04-28 09:52:15:   --> GET /robots.txt 404 1ms -
+2019-04-28 09:52:15:   <-- GET /favicon.ico
+2019-04-28 09:52:15: GET /favicon.ico - 0ms
+2019-04-28 09:52:15:   --> GET /favicon.ico 404 1ms -
+2019-04-28 09:52:29:   <-- GET /
+2019-04-28 09:52:29: GET / - 0ms
+2019-04-28 09:52:29:   --> GET / 404 1ms -
+2019-04-28 09:52:46:   <-- GET /djxt
+2019-04-28 09:52:46: GET /djxt - 11ms
+2019-04-28 09:52:46:   --> GET /djxt 200 15ms 9.07kb
+2019-04-28 09:52:50:   <-- POST /djxt/move
+2019-04-28 09:52:50: 前端接口：  { id: 'A1' }
+2019-04-28 09:52:50: POST /djxt/move - 123ms
+2019-04-28 09:52:50:   --> POST /djxt/move 200 0ms 44b
+2019-04-28 09:53:13: CLOSED: 127.0.0.1 53786
+2019-04-28 09:53:16: sock:  Socket {
+2019-04-28 09:53:16:   connecting: false,
+2019-04-28 09:53:16:   _hadError: false,
+2019-04-28 09:53:16:   _handle:
+2019-04-28 09:53:16:    TCP {
+2019-04-28 09:53:16:      reading: true,
+2019-04-28 09:53:16:      onread: [Function: onStreamRead],
+2019-04-28 09:53:16:      onconnection: null,
+2019-04-28 09:53:16:      [Symbol(owner)]: [Circular] },
+2019-04-28 09:53:16:   _parent: null,
+2019-04-28 09:53:16:   _host: null,
+2019-04-28 09:53:16:   _readableState:
+2019-04-28 09:53:16:    ReadableState {
+2019-04-28 09:53:16:      objectMode: false,
+2019-04-28 09:53:16:      highWaterMark: 16384,
+2019-04-28 09:53:16:      buffer: BufferList { head: null, tail: null, length: 0 },
+2019-04-28 09:53:16:      length: 0,
+2019-04-28 09:53:16:      pipes: null,
+2019-04-28 09:53:16:      pipesCount: 0,
+2019-04-28 09:53:16:      flowing: null,
+2019-04-28 09:53:16:      ended: false,
+2019-04-28 09:53:16:      endEmitted: false,
+2019-04-28 09:53:16:      reading: true,
+2019-04-28 09:53:16:      sync: false,
+2019-04-28 09:53:16:      needReadable: true,
+2019-04-28 09:53:16:      emittedReadable: false,
+2019-04-28 09:53:16:      readableListening: false,
+2019-04-28 09:53:16:      resumeScheduled: false,
+2019-04-28 09:53:16:      paused: true,
+2019-04-28 09:53:16:      emitClose: false,
+2019-04-28 09:53:16:      destroyed: false,
+2019-04-28 09:53:16:      defaultEncoding: 'utf8',
+2019-04-28 09:53:16:      awaitDrain: 0,
+2019-04-28 09:53:16:      readingMore: false,
+2019-04-28 09:53:16:      decoder: null,
+2019-04-28 09:53:16:      encoding: null },
+2019-04-28 09:53:16:   readable: true,
+2019-04-28 09:53:16:   _events:
+2019-04-28 09:53:16:    [Object: null prototype] { end: [Function: onReadableStreamEnd] },
+2019-04-28 09:53:16:   _eventsCount: 1,
+2019-04-28 09:53:16:   _maxListeners: undefined,
+2019-04-28 09:53:16:   _writableState:
+2019-04-28 09:53:16:    WritableState {
+2019-04-28 09:53:16:      objectMode: false,
+2019-04-28 09:53:16:      highWaterMark: 16384,
+2019-04-28 09:53:16:      finalCalled: false,
+2019-04-28 09:53:16:      needDrain: false,
+2019-04-28 09:53:16:      ending: false,
+2019-04-28 09:53:16:      ended: false,
+2019-04-28 09:53:16:      finished: false,
+2019-04-28 09:53:16:      destroyed: false,
+2019-04-28 09:53:16:      decodeStrings: false,
+2019-04-28 09:53:16:      defaultEncoding: 'utf8',
+2019-04-28 09:53:16:      length: 0,
+2019-04-28 09:53:16:      writing: false,
+2019-04-28 09:53:16:      corked: 0,
+2019-04-28 09:53:16:      sync: true,
+2019-04-28 09:53:16:      bufferProcessing: false,
+2019-04-28 09:53:16:      onwrite: [Function: bound onwrite],
+2019-04-28 09:53:16:      writecb: null,
+2019-04-28 09:53:16:      writelen: 0,
+2019-04-28 09:53:16:      bufferedRequest: null,
+2019-04-28 09:53:16:      lastBufferedRequest: null,
+2019-04-28 09:53:16:      pendingcb: 0,
+2019-04-28 09:53:16:      prefinished: false,
+2019-04-28 09:53:16:      errorEmitted: false,
+2019-04-28 09:53:16:      emitClose: false,
+2019-04-28 09:53:16:      bufferedRequestCount: 0,
+2019-04-28 09:53:16:      corkedRequestsFree:
+2019-04-28 09:53:16:       { next: null,
+2019-04-28 09:53:16:         entry: null,
+2019-04-28 09:53:16:         finish: [Function: bound onCorkedFinish] } },
+2019-04-28 09:53:16:   writable: true,
+2019-04-28 09:53:16:   allowHalfOpen: false,
+2019-04-28 09:53:16:   _sockname: null,
+2019-04-28 09:53:16:   _pendingData: null,
+2019-04-28 09:53:16:   _pendingEncoding: '',
+2019-04-28 09:53:16:   server:
+2019-04-28 09:53:16:    Server {
+2019-04-28 09:53:16:      _events: [Object: null prototype] { connection: [Function] },
+2019-04-28 09:53:16:      _eventsCount: 1,
+2019-04-28 09:53:16:      _maxListeners: undefined,
+2019-04-28 09:53:16:      _connections: 1,
+2019-04-28 09:53:16:      _handle:
+2019-04-28 09:53:16:       TCP {
+2019-04-28 09:53:16:         reading: false,
+2019-04-28 09:53:16:         onread: null,
+2019-04-28 09:53:16:         onconnection: [Function: onconnection],
+2019-04-28 09:53:16:         [Symbol(owner)]: [Circular] },
+2019-04-28 09:53:16:      _usingWorkers: false,
+2019-04-28 09:53:16:      _workers: [],
+2019-04-28 09:53:16:      _unref: false,
+2019-04-28 09:53:16:      allowHalfOpen: false,
+2019-04-28 09:53:16:      pauseOnConnect: false,
+2019-04-28 09:53:16:      _connectionKey: '4:127.0.0.1:3004',
+2019-04-28 09:53:16:      [Symbol(asyncId)]: 34 },
+2019-04-28 09:53:16:   _server:
+2019-04-28 09:53:16:    Server {
+2019-04-28 09:53:16:      _events: [Object: null prototype] { connection: [Function] },
+2019-04-28 09:53:16:      _eventsCount: 1,
+2019-04-28 09:53:16:      _maxListeners: undefined,
+2019-04-28 09:53:16:      _connections: 1,
+2019-04-28 09:53:16:      _handle:
+2019-04-28 09:53:16:       TCP {
+2019-04-28 09:53:16:         reading: false,
+2019-04-28 09:53:16:         onread: null,
+2019-04-28 09:53:16:         onconnection: [Function: onconnection],
+2019-04-28 09:53:16:         [Symbol(owner)]: [Circular] },
+2019-04-28 09:53:16:      _usingWorkers: false,
+2019-04-28 09:53:16:      _workers: [],
+2019-04-28 09:53:16:      _unref: false,
+2019-04-28 09:53:16:      allowHalfOpen: false,
+2019-04-28 09:53:16:      pauseOnConnect: false,
+2019-04-28 09:53:16:      _connectionKey: '4:127.0.0.1:3004',
+2019-04-28 09:53:16:      [Symbol(asyncId)]: 34 },
+2019-04-28 09:53:16:   [Symbol(asyncId)]: 384,
+2019-04-28 09:53:16:   [Symbol(lastWriteQueueSize)]: 0,
+2019-04-28 09:53:16:   [Symbol(timeout)]: null,
+2019-04-28 09:53:16:   [Symbol(kBytesRead)]: 0,
+2019-04-28 09:53:16:   [Symbol(kBytesWritten)]: 0 }
+2019-04-28 09:53:16: CONNECTED: 127.0.0.1:53888
+2019-04-28 09:53:32: CONNECTED: 127.0.0.1:53903
+2019-04-28 09:53:41: CLOSED: 127.0.0.1 53903
+2019-04-28 09:53:46: CONNECTED: 127.0.0.1:53918
+2019-04-28 10:02:58:   <-- GET /djxt/test
+2019-04-28 10:02:58: GET /djxt/test - 3ms
+2019-04-28 10:02:58:   --> GET /djxt/test 404 8ms -
+2019-04-28 10:03:39:   <-- GET /djxt/test
+2019-04-28 10:03:39: GET /djxt/test - 0ms
+2019-04-28 10:03:39:   --> GET /djxt/test 404 1ms -
+2019-04-28 10:04:11:   <-- GET /djxt/test
+2019-04-28 10:04:11: GET /djxt/test - 0ms
+2019-04-28 10:04:11:   --> GET /djxt/test 404 1ms -
+2019-04-28 10:04:11:   <-- GET /favicon.ico
+2019-04-28 10:04:11: GET /favicon.ico - 0ms
+2019-04-28 10:04:11:   --> GET /favicon.ico 404 0ms -
+2019-04-28 10:04:51:   <-- GET /djxt/test
+2019-04-28 10:04:51: GET /djxt/test - 6ms
+2019-04-28 10:04:51:   --> GET /djxt/test 200 10ms 2b
+2019-04-28 10:05:04:   <-- GET /djxt/test
+2019-04-28 10:05:04: GET /djxt/test - 6ms
+2019-04-28 10:05:04:   --> GET /djxt/test 200 12ms 2b
+2019-04-28 10:05:04: connected to server!
+2019-04-28 10:05:04: connect success
+2019-04-28 10:05:04: CONNECTED: 127.0.0.1:54715
+2019-04-28 10:05:04: DATA 127.0.0.1: HelloWorld!
+2019-04-28 10:06:06:   <-- GET /djxt/test
+2019-04-28 10:06:06: GET /djxt/test - 6ms
+2019-04-28 10:06:06:   --> GET /djxt/test 200 12ms 2b
+2019-04-28 10:06:06: connected to server!
+2019-04-28 10:06:06: connect success
+2019-04-28 10:06:06: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:06:06: end event
+2019-04-28 10:06:06: close
+2019-04-28 10:07:11:   <-- GET /djxt/test
+2019-04-28 10:07:11: GET /djxt/test - 1ms
+2019-04-28 10:07:11:   --> GET /djxt/test 200 2ms 2b
+2019-04-28 10:07:11: connected to server!
+2019-04-28 10:07:11: connect success
+2019-04-28 10:07:11: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:07:11: end event
+2019-04-28 10:07:11: close
+2019-04-28 10:07:30:   <-- GET /djxt
+2019-04-28 10:07:30: GET /djxt - 10ms
+2019-04-28 10:07:30:   --> GET /djxt 200 13ms 9.07kb
+2019-04-28 10:07:32:   <-- POST /djxt/move
+2019-04-28 10:07:32: 前端接口：  { id: 'A1' }
+2019-04-28 10:07:32:   xxx POST /djxt/move 500 3ms -
+2019-04-28 10:08:16:   <-- GET /djxt/test
+2019-04-28 10:08:16: GET /djxt/test - 0ms
+2019-04-28 10:08:16:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:08:16: connected to server!
+2019-04-28 10:08:16: connect success
+2019-04-28 10:08:16: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:08:16: end event
+2019-04-28 10:08:16: close
+2019-04-28 10:10:26:   <-- GET /djxt/test
+2019-04-28 10:10:26: GET /djxt/test - 6ms
+2019-04-28 10:10:26:   --> GET /djxt/test 200 10ms 2b
+2019-04-28 10:10:26: CONNECTED: 127.0.0.1:55037
+2019-04-28 10:10:26: connected to server!
+2019-04-28 10:10:26: connect success
+2019-04-28 10:10:26: DATA 127.0.0.1: HelloWorld!
+2019-04-28 10:10:31:   <-- GET /djxt
+2019-04-28 10:10:31: GET /djxt - 10ms
+2019-04-28 10:10:31:   --> GET /djxt 200 14ms 9.07kb
+2019-04-28 10:10:33:   <-- POST /djxt/move
+2019-04-28 10:10:33: 前端接口：  { id: 'A1' }
+2019-04-28 10:10:33: POST /djxt/move - 24ms
+2019-04-28 10:10:33:   --> POST /djxt/move 200 5ms 44b
+2019-04-28 10:10:33: <Buffer 41 31>
+2019-04-28 10:10:37:   <-- POST /djxt/move
+2019-04-28 10:10:37: 前端接口：  { id: 'B1' }
+2019-04-28 10:10:37: POST /djxt/move - 1ms
+2019-04-28 10:10:37:   --> POST /djxt/move 200 1ms 44b
+2019-04-28 10:10:37: <Buffer 42 31>
+2019-04-28 10:10:43:   <-- GET /djxt/test
+2019-04-28 10:10:43: GET /djxt/test - 0ms
+2019-04-28 10:10:43:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:10:43: connected to server!
+2019-04-28 10:10:43: connect success
+2019-04-28 10:10:43: CONNECTED: 127.0.0.1:55056
+2019-04-28 10:10:43: DATA 127.0.0.1: HelloWorld!
+2019-04-28 10:11:10:   <-- GET /djxt/test
+2019-04-28 10:11:10: GET /djxt/test - 6ms
+2019-04-28 10:11:10:   --> GET /djxt/test 200 11ms 2b
+2019-04-28 10:11:10: connected to server!
+2019-04-28 10:11:10: connect success
+2019-04-28 10:11:10: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:11:10: end event
+2019-04-28 10:11:10: close
+2019-04-28 10:19:07:   <-- GET /djxt/test
+2019-04-28 10:19:07: GET /djxt/test - 1ms
+2019-04-28 10:19:07:   --> GET /djxt/test 200 2ms 2b
+2019-04-28 10:19:07: connected to server!
+2019-04-28 10:19:07: connect success
+2019-04-28 10:19:07: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:19:07: end event
+2019-04-28 10:19:07: close
+2019-04-28 10:19:19:   <-- GET /djxt/test
+2019-04-28 10:19:19: GET /djxt/test - 1ms
+2019-04-28 10:19:19:   --> GET /djxt/test 200 2ms 2b
+2019-04-28 10:19:19: connected to server!
+2019-04-28 10:19:19: connect success
+2019-04-28 10:19:19: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:19:19: end event
+2019-04-28 10:19:19: close
+2019-04-28 10:19:20:   <-- GET /favicon.ico
+2019-04-28 10:19:20: GET /favicon.ico - 0ms
+2019-04-28 10:19:20:   --> GET /favicon.ico 404 1ms -
+2019-04-28 10:19:26:   <-- GET /djxt
+2019-04-28 10:19:26: GET /djxt - 13ms
+2019-04-28 10:19:26:   --> GET /djxt 200 16ms 9.07kb
+2019-04-28 10:19:28:   <-- POST /djxt/move
+2019-04-28 10:19:28: 前端接口：  { id: 'A1' }
+2019-04-28 10:19:28:   xxx POST /djxt/move 500 3ms -
+2019-04-28 10:19:34:   <-- GET /djxt/test
+2019-04-28 10:19:34: GET /djxt/test - 1ms
+2019-04-28 10:19:34:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:19:34: connected to server!
+2019-04-28 10:19:34: connect success
+2019-04-28 10:19:34: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:19:34: end event
+2019-04-28 10:19:34: close
+2019-04-28 10:19:34:   <-- GET /favicon.ico
+2019-04-28 10:19:34: GET /favicon.ico - 1ms
+2019-04-28 10:19:34:   --> GET /favicon.ico 404 1ms -
+2019-04-28 10:20:03:   <-- GET /djxt/test
+2019-04-28 10:20:03: GET /djxt/test - 0ms
+2019-04-28 10:20:03:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:20:03: connected to server!
+2019-04-28 10:20:03: connect success
+2019-04-28 10:20:03: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:20:03: end event
+2019-04-28 10:20:03: close
+2019-04-28 10:20:03:   <-- GET /favicon.ico
+2019-04-28 10:20:03: GET /favicon.ico - 0ms
+2019-04-28 10:20:03:   --> GET /favicon.ico 404 1ms -
+2019-04-28 10:24:01:   <-- GET /djxt/test
+2019-04-28 10:24:01: GET /djxt/test - 1ms
+2019-04-28 10:24:01:   --> GET /djxt/test 200 2ms 2b
+2019-04-28 10:24:01: connected to server!
+2019-04-28 10:24:01: connect success
+2019-04-28 10:24:01: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:24:01: end event
+2019-04-28 10:24:01: close
+2019-04-28 10:24:16:   <-- GET /djxt/test
+2019-04-28 10:24:16: GET /djxt/test - 1ms
+2019-04-28 10:24:16:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:24:16: connected to server!
+2019-04-28 10:24:16: connect success
+2019-04-28 10:24:16: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:24:16: end event
+2019-04-28 10:24:16: close
+2019-04-28 10:24:16:   <-- GET /favicon.ico
+2019-04-28 10:24:16: GET /favicon.ico - 0ms
+2019-04-28 10:24:16:   --> GET /favicon.ico 404 0ms -
+2019-04-28 10:25:29:   <-- GET /djxt/test
+2019-04-28 10:25:29: GET /djxt/test - 1ms
+2019-04-28 10:25:29:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:25:29: connected to server!
+2019-04-28 10:25:29: connect success
+2019-04-28 10:25:29: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:25:29: end event
+2019-04-28 10:25:29: close
+2019-04-28 10:25:29:   <-- GET /favicon.ico
+2019-04-28 10:25:29: GET /favicon.ico - 0ms
+2019-04-28 10:25:29:   --> GET /favicon.ico 404 1ms -
+2019-04-28 10:27:09:   <-- GET /djxt/test
+2019-04-28 10:27:09: GET /djxt/test - 1ms
+2019-04-28 10:27:09:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:27:09: connected to server!
+2019-04-28 10:27:09: connect success
+2019-04-28 10:27:09: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:27:09: end event
+2019-04-28 10:27:09: close
+2019-04-28 10:27:09:   <-- GET /favicon.ico
+2019-04-28 10:27:09: GET /favicon.ico - 0ms
+2019-04-28 10:27:09:   --> GET /favicon.ico 404 1ms -
+2019-04-28 10:35:33:   <-- GET /djxt/test
+2019-04-28 10:35:33: GET /djxt/test - 0ms
+2019-04-28 10:35:33:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:35:33: connected to server!
+2019-04-28 10:35:33: connect success
+2019-04-28 10:35:33: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:35:33: end event
+2019-04-28 10:35:33: close
+2019-04-28 10:35:37:   <-- GET /djxt
+2019-04-28 10:35:37: GET /djxt - 4ms
+2019-04-28 10:35:37:   --> GET /djxt 200 5ms 9.07kb
+2019-04-28 10:35:39:   <-- POST /djxt/move
+2019-04-28 10:35:39: 前端接口：  { id: 'A1' }
+2019-04-28 10:35:39:   xxx POST /djxt/move 500 1ms -
+2019-04-28 10:35:43:   <-- GET /djxt/test
+2019-04-28 10:35:43: GET /djxt/test - 1ms
+2019-04-28 10:35:43:   --> GET /djxt/test 200 2ms 2b
+2019-04-28 10:35:43: connected to server!
+2019-04-28 10:35:43: connect success
+2019-04-28 10:35:44: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:35:44: end event
+2019-04-28 10:35:44: close
+2019-04-28 10:44:13:   <-- GET /djxt/test
+2019-04-28 10:44:13: GET /djxt/test - 1ms
+2019-04-28 10:44:13:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:44:13: connected to server!
+2019-04-28 10:44:13: connect success
+2019-04-28 10:44:13: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:44:13: end event
+2019-04-28 10:44:13: close
+2019-04-28 10:44:15:   <-- GET /djxt/test
+2019-04-28 10:44:15: GET /djxt/test - 0ms
+2019-04-28 10:44:15:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:44:15: connected to server!
+2019-04-28 10:44:15: connect success
+2019-04-28 10:44:15: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:44:15: end event
+2019-04-28 10:44:15: close
+2019-04-28 10:44:15:   <-- GET /djxt/test
+2019-04-28 10:44:15: GET /djxt/test - 1ms
+2019-04-28 10:44:15:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:44:15: connected to server!
+2019-04-28 10:44:15: connect success
+2019-04-28 10:44:15: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:44:15: end event
+2019-04-28 10:44:15: close
+2019-04-28 10:44:16:   <-- GET /djxt/test
+2019-04-28 10:44:16: GET /djxt/test - 1ms
+2019-04-28 10:44:16:   --> GET /djxt/test 200 1ms 2b
+2019-04-28 10:44:16: connected to server!
+2019-04-28 10:44:16: connect success
+2019-04-28 10:44:16: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:44:16: end event
+2019-04-28 10:44:16: close
+2019-04-28 10:44:16:   <-- GET /djxt/test
+2019-04-28 10:44:16: GET /djxt/test - 1ms
+2019-04-28 10:44:16:   --> GET /djxt/test 200 2ms 2b
+2019-04-28 10:44:16: connected to server!
+2019-04-28 10:44:16: connect success
+2019-04-28 10:44:16: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:44:16: end event
+2019-04-28 10:44:16: close
+2019-04-28 10:44:20:   <-- GET /djxt/test
+2019-04-28 10:44:20: GET /djxt/test - 1ms
+2019-04-28 10:44:20:   --> GET /djxt/test 200 2ms 2b
+2019-04-28 10:44:20: connected to server!
+2019-04-28 10:44:20: connect success
+2019-04-28 10:44:20: <Buffer 48 54 54 50 2f 31 2e 31 20 34 30 30 20 42 61 64 20 52 65 71 75 65 73 74 0d 0a 53 65 72 76 65 72 3a 20 6e 67 69 6e 78 2f 31 2e 31 32 2e 31 0d 0a 44 61 ... >
+2019-04-28 10:44:20: end event
+2019-04-28 10:44:20: close
+2019-04-28 10:44:20:   <-- GET /favicon.ico
+2019-04-28 10:44:20: GET /favicon.ico - 1ms
+2019-04-28 10:44:20:   --> GET /favicon.ico 404 1ms -
+2019-04-28 10:44:24:   <-- GET /djxt
+2019-04-28 10:44:24: GET /djxt - 3ms
+2019-04-28 10:44:24:   --> GET /djxt 200 5ms 9.07kb
+2019-04-28 10:44:26:   <-- POST /djxt/move
+2019-04-28 10:44:26: 前端接口：  { id: 'B1' }
+2019-04-28 10:44:26:   xxx POST /djxt/move 500 1ms -
+2019-04-28 10:57:29:   <-- GET /djxt
+2019-04-28 10:57:29: GET /djxt - 14ms
+2019-04-28 10:57:29:   --> GET /djxt 200 25ms 9.07kb
+2019-04-29 22:38:58: CONNECTED: 127.0.0.1:52820
+2019-04-29 22:39:36: DATA 127.0.0.1: 2121
+2019-04-29 22:40:57:   [90m<--[39m [1mGET[22m [90m/djxt[39m
+2019-04-29 22:40:57: GET /djxt - 6ms
+2019-04-29 22:40:57:   [90m-->[39m [1mGET[22m [90m/djxt[39m [32m200[39m [90m16ms[39m [90m9.07kb[39m
+2019-04-29 22:40:57:   [90m<--[39m [1mGET[22m [90m/favicon.ico[39m
+2019-04-29 22:40:57: GET /favicon.ico - 0ms
+2019-04-29 22:40:57:   [90m-->[39m [1mGET[22m [90m/favicon.ico[39m [33m404[39m [90m0ms[39m [90m-[39m
+2019-04-29 22:42:44: CONNECTED: 127.0.0.1:53142
+2019-04-29 22:42:47:   [90m<--[39m [1mPOST[22m [90m/djxt/move[39m
+2019-04-29 22:42:47: 前端接口：  { id: 'A1' }
+2019-04-29 22:42:47: POST /djxt/move - 11ms
+2019-04-29 22:42:47:   [90m-->[39m [1mPOST[22m [90m/djxt/move[39m [32m200[39m [90m6ms[39m [90m44b[39m
