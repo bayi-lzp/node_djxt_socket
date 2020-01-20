@@ -16,10 +16,10 @@ var PORT = 3004;
 // 创建一个TCP服务器实例，调用listen函数开始监听指定端口
 // 传入net.createServer()的回调函数将作为”connection“事件的处理函数
 // 在每一个“connection”事件中，该回调函数接收到的socket对象是唯一的
-
+global.sockArr = []
 net.createServer(function(sock) {
 // 全局sock，可以在气其他地方调用
-global.sock = sock
+    sockArr.push(sock)
 // 获得了一个socket连接，将客户端输出来
 console.log('CONNECTED: ' +
     sock.remoteAddress + ':' + sock.remotePort);
@@ -33,6 +33,15 @@ sock.on('data', function(data) {
 
 // 为这个socket实例添加一个"close"事件处理函数
 sock.on('close', function(data) {
+    console.log(data);
+    let temp = -1
+    sockArr.forEach((item, index) => {
+        if (item.remotePort == sock.remotePort) {
+            temp = index
+        }
+    })
+    console.log(temp);
+    sockArr.splice(temp, 1);
     console.log('CLOSED: ' +
         sock.remoteAddress + ' ' + sock.remotePort);
 });
